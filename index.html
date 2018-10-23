@@ -19,13 +19,77 @@
         <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" width="86" height="86" class="hd-img-logo hidden-md-up" alt="">
         </a>
-        <div class="navbar-collapse collapse" id="navbarNav">
+        <div class="d-none d-md-block d-lg-block d-xl-block" id="navbarNav">
             <ul class="navbar-nav hd-text-logo">
                 <li class="nav-item py-0"><span class="hd-text-logo-bold">HUGO</span></li>
                 <li class="nav-item py-0"><span class="hd-text-logo-thin">DEVELOPER</span></li>
             </ul>
         </div>
     </nav>
+    <div class="container-fluid">
+            <div class="row">
+                <div class="banner">
+                    <div class="banner-content">
+                        <div class="text-xs-center text-sm-center text-md-center text-lg-center text-xl-center">                
+                            <div class="banner-item">
+                                <a [routerLink]="['/about']" >
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=156%C3%97156&w=156&h=156" alt="..." class="img-thumbnail rounded-circle">
+                                </a>
+                                <h1 class="text-white">Lorem ipsum dolor sit amet</h1>
+                                <h2>{{ 'Home.Subtitle' | translate }}</h2>
+                            </div>
+                            <div class="scroll-down hidden-xs-down">
+                                <a pageScroll href="#posts">
+                                    <img src="assets/images/scroll-down.gif" width="80" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="posts">
+            <hd-list-posts></hd-list-posts>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="contact contact-container">
+                    <div class="contact-item">
+                        <div class="contact-content text-xs-center text-sm-center text-md-center text-lg-center text-xl-center">
+                            <h2>
+                                <p>{{ 'Home.Contact-Banner-Title' | translate }}</p>
+                            </h2>
+                            <a [routerLink]="['/contact']" class="btn btn-lg btn-primary btn-contact"> 
+                                {{ 'Home.Contact-Banner-Button' | translate }} <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bar-social">
+                    <ul>
+                        <li>
+                            <a href="" class="bar-social-twiiter">
+                                <div class="fa fa-twitter fa-3x text-white"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bar-social-github">
+                                <div class="fa fa-github fa-3x text-white"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="bar-social-linkedin">
+                                <div class="fa fa-linkedin fa-3x text-white"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
