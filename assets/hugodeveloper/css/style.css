@@ -49,11 +49,9 @@
 }
 
 
-.hd-navbar{
-    width: 100%;
-    height: 100px;
+.bg-darkGray{
     background-color:#303030;
-    position: relative;
+
 }
 
 .hd-img-logo{     
@@ -62,7 +60,6 @@
 
 .hd-text-logo {
     color:white;
-    padding:34px 0 0 20px;
     font-size: 1.8em;    
 }
 
